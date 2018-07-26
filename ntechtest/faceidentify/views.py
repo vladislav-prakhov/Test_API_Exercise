@@ -15,11 +15,20 @@ def face_identify(request):
     if form.is_valid():
         username_share = form['user_name'].value()
         # photo_share = request.FILES['photo']
+        if form['threshold'].value() == '':
+            threshold = 0
+        else:
+            threshold = form['threshold'].value()
+
+        if form['res_n'].value() == '':
+            res_n = 1
+        else:
+            res_n = form['res_n'].value()
 
         data = {
                 'mf_selector': 'all',
-                'threshold': form['threshold'].value(),
-                'n': form['res_n'].value(),
+                'threshold': threshold,
+                'n': res_n,
         }
 
         instance = form.save()
