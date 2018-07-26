@@ -1,0 +1,44 @@
+{
+  "results": {
+    "[569, 223, 667, 322]": [
+      {
+        "confidence": 0.6797,
+        "face": {
+          "galleries": [
+            "default"
+          ],
+          "id": 693107,
+          "meta": "{\"badge\": \"МОЛОДЕЖНАЯ ПРОГРАММА\", \"name\": \"Антон Евгеньевич Крылов\", \"company\": \"Высшая школа ИТИС КФУ\"}",
+          "normalized": "http://static.findface.pro/uploads/58242dbda43d244cf4005001/3be59506e1b8b53a2a2dd46c1acb034b_530_406_911_786_norm.png",
+          "photo": "photo",
+          "photo_hash": "3be59506e1b8b53a2a2dd46c1acb034b",
+          "thumbnail": "https://static.findface.pro/58242dbda43d244cf4005001/3be59506e1b8b53a2a2dd46c1acb034b_530_406_911_786_thumb.jpg",
+          "timestamp": "2017-05-23T20:48:44.642507",
+          "x1": 530,
+          "x2": 911,
+          "y1": 406,
+          "y2": 786
+        }
+      },
+      {
+        "confidence": 0.6658,
+        "face": {
+          "galleries": [
+            "default"
+          ],
+          "id": 693805,
+          "meta": "{\"badge\": \"ОПТИМУМ БЕСПЛАТНЫЙ\", \"name\": \"Роман Вячеславович Трутнев\", \"company\": \"\\\"АО \\\"\\\"Завод Элекон\\\"\\\"\\\"\"}",
+          "normalized": "http://static.findface.pro/uploads/58242dbda43d244cf4005001/d2735db4d095cea2c10ea8fa614a760e_550_615_1129_1194_norm.png",
+          "photo": "photo",
+          "photo_hash": "d2735db4d095cea2c10ea8fa614a760e",
+          "thumbnail": "https://static.findface.pro/58242dbda43d244cf4005001/d2735db4d095cea2c10ea8fa614a760e_550_615_1129_1194_thumb.jpg",
+          "timestamp": "2017-05-23T21:02:14.332545",
+          "x1": 550,
+          "x2": 1129,
+          "y1": 615,
+          "y2": 1194
+        }
+      }
+    ]
+  }
+}

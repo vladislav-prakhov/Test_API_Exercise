@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head_title %}Identify Faces on Photo{% endblock head_title %}
+
+{% block style %}
+h1 {
+	color: #777777
+}
+{% endblock style %}
+
+{% block content %}
+<div class="col-sm-6 col-sm-offset-3">
+	<h1>NtechLabTestApp</h1>
+	<h2>Identify Faces on This Photo</h2>
+	<form method="POST" action="" enctype="multipart/form-data">{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" class="btn btn-default" value="Identify Faces on This Image"/> <!-- # '/' is important. Without it input works like GET-->
+	</form>
+</div>
+{% endblock content %}

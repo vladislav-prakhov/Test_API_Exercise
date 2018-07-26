@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block head_title %}Face Identification Result{% endblock head_title %}
+
+{% block style %}
+h1 {
+	color: #777777
+}
+{% endblock style %}
+
+{% block content %}
+<div class="col-sm-6 col-sm-offset-3">
+
+	<h1>Result is here!!!</h1>
+  <h2>For <span style="color:red;">{{ username }}</span></h2>
+  {% if instance.photo %}
+	  <img src='{{ instance.photo.url }}' class="img-thumbnail img-responsive" style="max-height: 300px"/>
+	{% endif %}
+	{% for key, value in faces_data.items %}
+	<div style="margin-bottom: 50px">
+		<h4>Face detection coordinates {{ key }}</h4>
+		{% for key, value in value.items %}
+				<h5><span style="color:orange">{{ key }}</span></h5>
+				<img src='{{ value.normalized_url }}' class="img-thumbnail img-responsive" style="max-height: 200px"/>
+						<h6>confidence</h6>
+						<p>{{ value.confidence }}</p>
+						<h6>name</h6>
+						<p>{{ value.name }}</p>
+		{% endfor %}
+	</div>
+	{% endfor %}
+
+</div>
+{% endblock content %}

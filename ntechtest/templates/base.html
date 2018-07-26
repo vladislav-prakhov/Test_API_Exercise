@@ -1,0 +1,49 @@
+<!-- DOCTYPE html -->
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block head_title %}NtechLab Test Project{% endblock head_title %}
+	</title>
+	<link rel="stylesheet" href='{% static "css/base.css" %}' />
+	<link rel="stylesheet" href='{% static "bootstrap/css/bootstrap.min.css" %}' />
+
+	<style>
+	{% block style %}
+	{% endblock style %}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		{% block content %}
+
+			<div class="col-lg-6 offset-lg-3">
+				<h1> {{ title }} template is working properly!</h1>
+
+				<!-- {% for obj in object_list %}
+				<div class="row">
+				  <div class="col-sm-12">
+				    <div class="thumbnail">
+							{% if obj.image %}
+							<img src='{{ obj.image.url }}' class="img-fluid" alt="Responsive image"/>
+							{% endif %}
+				      <div class="caption">
+								{% if obj.draft %}<h3 style="color:red;">Draft</h3>{% endif %}
+								{% if obj.publish > today %}<h3 style="color:brown">Future Post</h3>{% endif %}
+				        <h3><a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a>
+									<small>{{ obj.timestamp|timesince }}</small>
+								</h3>
+				        <p>{{ obj.content|linebreaks|truncatechars:60 }}</p>
+				        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">View</a></p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				{% endfor %} -->
+		</div>
+		{% endblock content %}
+	</div>
+</body>
+<script src='{% static "bootstrap/js/bootstrap.min.js" %}' />
+</html>
